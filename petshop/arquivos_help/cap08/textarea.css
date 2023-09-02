@@ -1,0 +1,33 @@
+.textarea {
+    box-sizing: border-box;
+    border: 1px solid var(--cor-secundaria);
+    padding: 0.5rem;
+    border-radius: 7px;
+    width: 100%;
+    min-height: 3rem;
+}
+
+.textarea-container {
+    font-weight: var(--fonte-peso-input);
+}
+
+.textarea::placeholder {
+    visibility: hidden;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.textarea-label {
+
+    font-size: var(--fonte-tamanho-input-label);
+    transition: all 0.25s;
+}
+
+.textarea:not(:placeholder-shown) + .textarea-label, .textarea:focus + .textarea-label {
+    font-size: 0.875rem;
+    top: -1.25rem;
+    transition: all 0.25s;
+}
+
