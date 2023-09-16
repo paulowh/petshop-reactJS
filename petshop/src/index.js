@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './paginas/Home';
 import Sobre from './paginas/Sobre';
 import Pagina404 from './paginas/Pagina404';
+import ContatoDetalhes from './paginas/ContatoR';
 
 // const router = createBrowserRouter([
 //   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "sobre",
         element: <Sobre />
+      },
+      {
+        path: "contato/:id",
+        element: <ContatoDetalhes />
       }
     ]
   }

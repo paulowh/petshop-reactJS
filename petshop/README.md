@@ -18,4 +18,3 @@ You may also see any lint errors in the console.
 ### `npm i react-router-dom`
 
 Para a criação das nossas rotas, estamos utilizando a biblioteca do react router dom
-
