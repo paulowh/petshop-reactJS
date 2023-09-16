@@ -1,6 +1,7 @@
 import React from "react";
 import '../assets/css/components/cabecalho.css'
 import imagem from '../assets/img/catiorrinho.svg'
+import { Link } from "react-router-dom";
 
 const Cabecalho = () => {
     return (
