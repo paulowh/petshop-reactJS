@@ -18,3 +18,13 @@ You may also see any lint errors in the console.
 ### `npm i react-router-dom`
 
 Para a criação das nossas rotas, estamos utilizando a biblioteca do react router dom
+
+### `npm i json-server`
+
+Para rodar a API iremos utilizar o json server 
+
+Para executar nosso servidor ultilizamos o codigo `npx json-server --watch db.json --port 5000` , direcionando ele para a porta 5000 
+
+### `npm i axios`
+
+Para consumir os dados da nossa API, iremos utilizar a biblioteca do axios
