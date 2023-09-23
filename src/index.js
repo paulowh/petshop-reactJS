@@ -8,6 +8,7 @@ import Home from './paginas/Home';
 import Sobre from './paginas/Sobre';
 import Pagina404 from './paginas/Pagina404';
 import ContatoDetalhes from './paginas/ContatoR';
+import Post from './paginas/Post';
 
 // const router = createBrowserRouter([
 //   {
@@ -24,33 +25,38 @@ import ContatoDetalhes from './paginas/ContatoR';
 //   }
 // ])
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <Pagina404 />,
-    children: [
-      {
-        path: "/",
-        element: <Home />
-      },
-      {
-        path: "sobre",
-        element: <Sobre />
-      },
-      {
-        path: "contato/:id",
-        element: <ContatoDetalhes />
-      }
-    ]
-  }
-])
+const router = createBrowserRouter([{
+  path: "/",
+  element: < App />,
+  // errorElement: < Pagina404 />,
+  children: [
+    {
+      path: "/",
+      element: < Home />
+    },
+    {
+      path: "sobre",
+      element: < Sobre />
+    },
+    {
+      path: "contato/:id",
+      element: < ContatoDetalhes />
+    },
+    {
+      path: "posts/:id",
+      element: <Post />
+    },
+    {
+      path: "*",
+      element: <Pagina404 />
+    }
+  ]
+}])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+root.render(<React.StrictMode>
+  < RouterProvider router={router} />
+</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
