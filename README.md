@@ -15,6 +15,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `npm run server`
+Para rodar nosso servidor com os dados da API, rodaremos o comando a cima, ele ira abrir uma nova porta em [http://localhost:5000](http://localhost:5000) 
+
+
 ### `npm i react-router-dom`
 
 Para a criação das nossas rotas, estamos utilizando a biblioteca do react router dom

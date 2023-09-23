@@ -1,4 +1,5 @@
 import React from "react";
+import ListPost from "../components/ListPost";
 
 const Home = () => {
     return (
@@ -6,7 +7,7 @@ const Home = () => {
             <div>
                 <h2 className="titulo-pagina">Pet notícias</h2>
             </div>
-            <section className="container flex flex--centro">
+            {/* <section className="container flex flex--centro">
                 <article className="cartao post">
                     <h2 className="cartao__titulo">Banho no cão</h2>
                     <p className="cartao__texto">Banhos regulares mantém os pelos e pele de seu cachorro
@@ -14,7 +15,8 @@ const Home = () => {
                         resíduos de pelos e peles que já estão mortas, providenciando um maior
                         respiro da pele de seu cachorro</p>
                 </article>
-            </section>
+            </section> */}
+            <ListPost url={'/posts/'} />
         </main>
     )
 }
