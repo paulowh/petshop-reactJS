@@ -8,7 +8,7 @@ const ListPost = ({url}) => {
 
   useEffect(() => {
     busca(url, setPosts)
-  }, [])
+  }, [url])
 
 
   return (

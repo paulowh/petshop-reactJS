@@ -1,5 +1,6 @@
 import React from "react";
 import ListPost from "../components/ListPost";
+import ListaCategorias from "../components/ListaCategorias";
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
                         respiro da pele de seu cachorro</p>
                 </article>
             </section> */}
+            <ListaCategorias />
             <ListPost url={'/posts/'} />
         </main>
     )
