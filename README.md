@@ -32,3 +32,11 @@ Para executar nosso servidor ultilizamos o codigo `npx json-server --watch db.js
 ### `npm i axios`
 
 Para consumir os dados da nossa API, iremos utilizar a biblioteca do axios
+
+#### `rafce`
+
+Atalho para criar a nossa estrutura padrão nos arquivos, para esse atalho funcionar é preciso instalar a extensão do vscode [ES7+ React](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+
+### `npm install @mui/material @emotion/react @emotion/styled`
+
+Fazendo a instalação da biblioteca de estilização [MUI Material UI](https://mui.com/material-ui/)

@@ -10,6 +10,7 @@ import Pagina404 from './paginas/Pagina404';
 import ContatoDetalhes from './paginas/ContatoR';
 import Post from './paginas/Post';
 import Categoria from './paginas/Categoria';
+import Admin from './paginas/admin/Admin';
 
 // const router = createBrowserRouter([
 //   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([{
     {
       path: "categoria/:id/:subcategoria",
       element: < Categoria />
+    },
+    {
+      path: "/admin",
+      element: < Admin />
     }
 
   ]
