@@ -53,7 +53,11 @@ const router = createBrowserRouter([{
     },
     {
       path: "categoria/:id",
-      element: <Categoria />
+      element: < Categoria />
+    },
+    {
+      path: "categoria/:id/:subcategoria",
+      element: < Categoria />
     }
 
   ]
