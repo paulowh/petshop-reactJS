@@ -49,17 +49,19 @@ const ListCatAdmin = () => {
                                     </Link>
                                 </td>
                                 <td>
-                                    <Button
-                                        variant='contained'
-                                        type='submit'
-                                        color='warning'
-                                    >
-                                        Editar
-                                    </Button>
+                                    <Link to={ `/admin/EditarCategoria/${categoria.id}` }>
+                                        <Button
+                                            variant='contained'
+                                            type='submit'
+                                            color='warning'
+                                        >
+                                            Editar
+                                        </Button>
+                                    </Link>
+                                    
                                 </td>
                                 <td>
                                     <Link to={'/admin'}>
-
                                         <Button
                                             variant='contained'
                                             type='submit'

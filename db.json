@@ -15,6 +15,13 @@
         "treinamento",
         "educacao"
       ]
+    },
+    {
+      "id": "paulo",
+      "nome": "Willian",
+      "subcategorias": [
+        "Willian"
+      ]
     }
   ],
   "posts": [

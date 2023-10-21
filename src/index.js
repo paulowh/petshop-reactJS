@@ -68,6 +68,10 @@ const router = createBrowserRouter([{
     {
       path: "/admin/NovaCategoria",
       element: <FormCategoria />
+    },
+    {
+      path: "/admin/EditarCategoria/:id",
+      element: <FormCategoria />
     }
   ]
 }])
