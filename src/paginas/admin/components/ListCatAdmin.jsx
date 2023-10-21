@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { busca } from '../../../api/api'
+import { api, busca } from '../../../api/api'
 import { Link } from 'react-router-dom'
 import '../components/tabela.css'
 import { Button } from '@mui/material'
@@ -10,6 +10,14 @@ const ListCatAdmin = () => {
     useEffect(() => {
         busca(`/categorias`, setCategorias)
     }, [])
+
+    const excluir = (CategoriaDel) => {
+        api.delete(`categorias/${CategoriaDel.id}/`)
+            .then(() => {
+                const listaCategorias = categorias.filter(categoria => categoria.id !== CategoriaDel.id)
+                setCategorias([...listaCategorias])
+            })
+    }
 
     return (
         <section className="container">
@@ -41,7 +49,7 @@ const ListCatAdmin = () => {
                                     </Link>
                                 </td>
                                 <td>
-                                <Button
+                                    <Button
                                         variant='contained'
                                         type='submit'
                                         color='warning'
@@ -50,13 +58,18 @@ const ListCatAdmin = () => {
                                     </Button>
                                 </td>
                                 <td>
-                                    <Button
-                                        variant='contained'
-                                        type='submit'
-                                        color='error'
-                                    >
-                                        Excluir
-                                    </Button>
+                                    <Link to={'/admin'}>
+
+                                        <Button
+                                            variant='contained'
+                                            type='submit'
+                                            color='error'
+
+                                            onClick={() => excluir(categoria)}
+                                        >
+                                            Excluir
+                                        </Button>
+                                    </Link>
                                 </td>
                             </tr>
                         ))
