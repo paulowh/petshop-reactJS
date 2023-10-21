@@ -23,7 +23,7 @@ const ListCatAdmin = () => {
                                     variant="contained"
                                     type='submit'
                                     fullWidth
-                                    sx={{ marginTop: 1}}
+                                    sx={{ marginTop: 1 }}
                                 >
                                     Nova Categoria
                                 </Button>
@@ -40,8 +40,24 @@ const ListCatAdmin = () => {
                                         to={`/categoria/${categoria.id}`}>{categoria.nome}
                                     </Link>
                                 </td>
-                                <td></td>
-                                <td></td>
+                                <td>
+                                <Button
+                                        variant='contained'
+                                        type='submit'
+                                        color='warning'
+                                    >
+                                        Editar
+                                    </Button>
+                                </td>
+                                <td>
+                                    <Button
+                                        variant='contained'
+                                        type='submit'
+                                        color='error'
+                                    >
+                                        Excluir
+                                    </Button>
+                                </td>
                             </tr>
                         ))
                     }
