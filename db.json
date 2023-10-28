@@ -17,10 +17,11 @@
       ]
     },
     {
-      "id": "paulo",
-      "nome": "Willian",
+      "id": "REACTJS",
+      "nome": "REACTJS",
       "subcategorias": [
-        "Willian"
+        "React",
+        "JS"
       ]
     }
   ],

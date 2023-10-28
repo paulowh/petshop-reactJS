@@ -73,6 +73,17 @@ const ListCatAdmin = () => {
                                         </Button>
                                     </Link>
                                 </td>
+                                <td>
+                                    <Link to={`/admin/categorias/${categoria.id}`}>
+                                    <Button
+                                            variant='outlined'
+                                            type='submit'
+                                            color='primary'
+                                        >
+                                            SubCategoria
+                                        </Button>
+                                    </Link>
+                                </td>
                             </tr>
                         ))
                     }
