@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import imagem from '../../../assets/img/catiorrinhoAdmin.svg';
 
 
@@ -45,7 +45,9 @@ const NavAdmin = () => {
                     </thead>
                 </table>
             </section>
+
         }
+            <Outlet />
         </>
     );
 }

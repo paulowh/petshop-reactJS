@@ -17,9 +17,9 @@ const CatAdmin = () => {
 
     return (
         <main>
-            <div className="container">
+            {/* <div className="container">
                 <h2 className="titulo-pagina">Administração</h2>
-            </div>
+            </div> */}
 
             <div className="container">
                 <table className="tabela">

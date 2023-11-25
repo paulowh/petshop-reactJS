@@ -1,14 +1,6 @@
 {
   "categorias": [
     {
-      "id": "bem-estar",
-      "nome": "bem-estar",
-      "subcategorias": [
-        "higiene",
-        "saude"
-      ]
-    },
-    {
       "id": "comportamento",
       "nome": "comportamento",
       "subcategorias": [
@@ -51,12 +43,11 @@
       "subcategoria": "saude"
     },
     {
-      "id": 4,
-      "title": "Uma onda de pets estressados",
+      "title": "Uma onda de pets estressados alterado",
       "metadescription": "Você está triste, doente ou nervoso, e o pet acaba imitando o seu comportamento",
       "body": "Atenção e carinho. A primeira coisa que você deve saber, caso ainda não tenha adotado um pet, é que ele demanda tempo, atenção e carinho. Essas são as coisas mais importantes que você precisa ter em mente! Não se esqueça das brincadeiras! A interação com o dono também é fundamental para o bem-estar do pet. Por isso, além de oferecer brinquedos, procure brincar com o cão lançando bolinhas, brincando de esconde-esconde, etc., Evite deixar o bichinho sozinho por muito tempo.",
       "categoria": "comportamento",
-      "subcategoria": "educacao"
+      "id": 4
     },
     {
       "id": 5,
@@ -83,12 +74,18 @@
       "subcategoria": "treinamento"
     },
     {
-      "id": 8,
-      "title": "Tartaruga: Um pet fácil de cuidar!",
-      "metadescription": "A alimentação da tartaruga é simples e fácil de encontrar",
-      "body": "A dieta deve contar com a ingestão de ração, frutas e vegetais como cenouras, maças e mamão, além de feijão verde e espinafre. Outro complemento essencial para a manutenção da proteína é a ingestão de tenébrios vivos ou desidratados. O normal é que um animal jovem coma mais carne, mas passe a preferir frutas e legumes quando for ficando idoso. A alimentação deve ser composta por aproximadamente 80% a 90% de legumes e flores e somente 10% a 20% de frutas.",
-      "categoria": "bem-estar",
-      "subcategoria": "saude"
+      "title": "novo",
+      "metadescription": "novo novo",
+      "body": "novo novo novo",
+      "categoria": "",
+      "id": 8
+    },
+    {
+      "title": "novo1",
+      "metadescription": "novo1 novo1",
+      "body": "novo1 novo1 novo1",
+      "categoria": "REACTJS",
+      "id": 9
     }
   ]
 }

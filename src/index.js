@@ -14,6 +14,9 @@ import Admin from './paginas/admin/Admin';
 import FormCategoria from './paginas/admin/components/FormCategoria';
 import CatAdmin from './paginas/admin/CatAdmin';
 import FormSubCategoria from './paginas/admin/components/FormSubCategoria';
+import NavAdmin from './paginas/admin/components/NavAdmin'
+import ListaPostAdmin from './paginas/admin/components/ListPostAdmin';
+import FormPostAdmin from './paginas/admin/components/FormPostAdmin';
 
 // const router = createBrowserRouter([
 //   {
@@ -64,32 +67,51 @@ const router = createBrowserRouter([{
   },
   {
     path: "/admin",
-    element: < Admin />
-  },
-  {
-    path: "/admin/NovaCategoria",
-    element: < FormCategoria />
-  },
-  {
-    path: "/admin/EditarCategoria/:id",
-    element: < FormCategoria />
-  },
-  {
-    path: "/admin/categorias/:id",
-    element: < CatAdmin />
-  },
-  {
-    path: "/admin/sub/:id",
-    element: <FormSubCategoria />
-
+    element: < NavAdmin />,
+    children: [
+      {
+        path: "/admin",
+        element: <Admin />
+      },
+      {
+        path: "/admin/NovaCategoria",
+        element: < FormCategoria />
+      },
+      {
+        path: "/admin/EditarCategoria/:id",
+        element: < FormCategoria />
+      },
+      {
+        path: "/admin/categorias/:id",
+        element: < CatAdmin />
+      },
+      {
+        path: "/admin/sub/:id",
+        element: < FormSubCategoria />
+      },
+      {
+        path: "/admin/posts",
+        element: < ListaPostAdmin />
+      }, 
+      {
+        path: "/admin/posts/NovoPost",
+        element: <FormPostAdmin />
+      },
+      {
+        path: "/admin/posts/:id",
+        element: <FormPostAdmin />
+      }
+    ]
   }
   ]
 }])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<React.StrictMode>
-  <RouterProvider router={router} />
-</React.StrictMode>);
+root.render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode >
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
