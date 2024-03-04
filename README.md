@@ -1,42 +1,55 @@
-# Nosso primeiro projeto em REACTJS
+# Petshop Com ReactJS
 
-Pagina Web para um petshop
+![GitHub repo size](https://img.shields.io/github/repo-size/paulowh/petshop-reactjs?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/paulowh/petshop-reactjs?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/paulowh/petshop-reactjs?style=for-the-badge)
+<!-- ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/paulowh/petshop-reactjs?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/paulowh/petshop-reactjs?style=for-the-badge) -->
 
-## Configurando nosso projeto
+> Projeto que simula um portifolio de um petshop nesse projeto temos a utilização de rotas, Components, consumo de API, conceitos de CRUD e entre outros, o projeto foi feito junto com  a turma de React Native - JS de 2023
 
-### `npm install react-scripts --save`
-para rodar a primeira vez o projeto, é necessario rodar o comando:
+## 💻 Pré-requisitos
 
-### `npm start`
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Você instalou a versão mais recente do [node.js](https://nodejs.org/en)
+- Você instalou a versão mais recente do [GIT](https://git-scm.com/)
+- Você instalou a biblioteca react-scripts `npm install react-scripts --save`
+- Você tem uma máquina `Windows`. Indique qual sistema operacional é compatível / não compatível.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Instalando `petshop-reactJS`
 
-### `npm run server`
-Para rodar nosso servidor com os dados da API, rodaremos o comando a cima, ele ira abrir uma nova porta em [http://localhost:5000](http://localhost:5000) 
+Para instalar o `petshop-reactJS`, siga estas etapas:
 
+Windows:
 
-### `npm i react-router-dom`
+```
+npm install react-scripts --save
+npm i react-router-dom
+npm i json-server
+npm install @mui/material @emotion/react @emotion/styled
 
-Para a criação das nossas rotas, estamos utilizando a biblioteca do react router dom
+```
 
-### `npm i json-server`
+## ☕ Usando `petshop-reactJS`
 
-Para rodar a API iremos utilizar o json server 
+Para usar `petshop-reactJS`, siga estas etapas:
 
-Para executar nosso servidor ultilizamos o codigo `npx json-server --watch db.json --port 5000` , direcionando ele para a porta 5000 
+```
+npm start
+npm run server
+```
 
-### `npm i axios`
+o comando `npm run server` é um atalho criado no arquivo `package.json` e executa o comando `npx json-server --watch db.json --port 5000` assim rodando nossa API na porta 5000
 
-Para consumir os dados da nossa API, iremos utilizar a biblioteca do axios
+## 📫 Contribuindo para `petshop-reactJS`
 
-#### `rafce`
+Para contribuir com `petshop-reactJS`, siga estas etapas:
 
-Atalho para criar a nossa estrutura padrão nos arquivos, para esse atalho funcionar é preciso instalar a extensão do vscode [ES7+ React](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <petshop-reactJS> / <local>`
+5. Crie a solicitação de pull.
 
-### `npm install @mui/material @emotion/react @emotion/styled`
-
-Fazendo a instalação da biblioteca de estilização [MUI Material UI](https://mui.com/material-ui/)
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
